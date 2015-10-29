@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "WC Power Test",
   "version": "0.1",
   "browser_action": {
