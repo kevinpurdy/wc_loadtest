@@ -12,7 +12,7 @@ function minutes(m) {
     return seconds(m * 60);
 }
 
-var test_time_ms = minutes(1440);
+var test_time_ms = minutes(60);
 var test_startup_delay = seconds(5);
 var should_scroll = true;
 var should_scroll_up = true;
