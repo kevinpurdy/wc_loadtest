@@ -3,11 +3,11 @@
   "name": "WC Power Test",
   "version": "0.1",
   "browser_action": {
-    "default_icon": "skin/chrome_bug.png",
+    "default_icon": "skin/wcatter.png",
     "default_title": "A more-than-one-hour Chrome battery test"
   },
-  "icons": { "48": "skin/chrome_bug.png",
-          "128": "skin/chrome_bug.png" },
+  "icons": { "48": "skin/wcatter.png",
+          "128": "skin/wcatter.png" },
   "permissions": [
     "http://*/", "https://*/", "tabs"
   ],
