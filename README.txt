@@ -1,3 +1,5 @@
+// All text below is from the original Chromium project README. After testing, I'll write here what this modified version does.
+
 power_LoadTest does not need to pack the extension to run it, but it
 can be packed to run it in your browser.
 
