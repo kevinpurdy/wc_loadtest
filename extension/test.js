@@ -6,6 +6,7 @@ var cycle_tabs = {};
 var cycles = {};
 var time_ratio = 3600 * 1000 / test_time_ms; // default test time is 1 hour
 var preexisting_windows = [];
+var loop_hours = 20; // Kevin's variable to looop 20 hours (fingers crossed)
 
 function setupTest() {
   chrome.windows.getAll(null, function(windows) {
@@ -132,7 +133,9 @@ function initialize() {
   chrome.browserAction.onClicked.addListener(function(tab) {
     // Start the test with default settings.
     chrome.runtime.onMessage.addListener(testListener);
-    setTimeout(setupTest, 1000);
+    for (var i = 0; i <= loop_hours; i++) {
+      setTimeout(setupTest, 1000 + (loop_hours * 3600000));
+    }
   });
 }
 
