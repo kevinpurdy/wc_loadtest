@@ -9,7 +9,7 @@
   "icons": { "48": "skin/wcatter.png",
           "128": "skin/wcatter.png" },
   "permissions": [
-    "http://*/", "https://*/", "tabs"
+    "http://*/", "https://*/", "tabs", "fileSystem"
   ],
   "background": {
     "persistent": true,
