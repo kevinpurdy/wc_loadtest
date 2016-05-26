@@ -1,15 +1,15 @@
 {
   "manifest_version": 2,
   "name": "WC Power Test",
-  "version": "0.1",
+  "version": "0.9",
   "browser_action": {
     "default_icon": "skin/wcatter.png",
-    "default_title": "A more-than-one-hour Chrome battery test"
+    "default_title": "20-hour Chrome battery test"
   },
   "icons": { "48": "skin/wcatter.png",
           "128": "skin/wcatter.png" },
   "permissions": [
-    "http://*/", "https://*/", "tabs", "fileSystem"
+    "http://*/", "https://*/", "tabs"
   ],
   "background": {
     "persistent": true,
