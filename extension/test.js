@@ -134,7 +134,7 @@ function initialize() {
     // Start the test with default settings.
     chrome.runtime.onMessage.addListener(testListener);
     for (var i = 0; i <= loop_hours; i++) {
-      setTimeout(setupTest, 1000 + (loop_hours * 3600000));
+      setTimeout(setupTest, 1000 + (i * 3600000));
     }
   });
 }
