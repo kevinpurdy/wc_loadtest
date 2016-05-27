@@ -130,6 +130,7 @@ function startTest() {
 
 function initialize() {
   // Called when the user clicks on the browser action.
+  chrome.power.requestKeepAwake(display);
   chrome.browserAction.onClicked.addListener(function(tab) {
     // Start the test with default settings.
     chrome.runtime.onMessage.addListener(testListener);
