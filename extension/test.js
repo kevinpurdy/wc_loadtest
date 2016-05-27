@@ -132,6 +132,7 @@ function initialize() {
   // Called when the user clicks on the browser action.
   chrome.browserAction.onClicked.addListener(function(tab) {
     // Start the test with default settings.
+    chrome.power.requestKeepAwake('display');
     chrome.runtime.onMessage.addListener(testListener);
     for (var i = 0; i <= loop_hours; i++) {
       setTimeout(setupTest, 1000 + (i * 3600000));
