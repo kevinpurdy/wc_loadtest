@@ -15,7 +15,7 @@
     "persistent": true,
     "page": "bg.html"
   },
-  "description": "GoogleTest",
+  "description": "Chrome-based battery test",
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
