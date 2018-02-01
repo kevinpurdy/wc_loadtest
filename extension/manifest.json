@@ -2,7 +2,6 @@
   "manifest_version": 2,
   "name": "WC Power Test",
   "version": "1.0",
-  "update_url": "https://thewirecutter.com",
   "browser_action": {
     "default_icon": "skin/wcatter.png",
     "default_title": "20-hour Chrome battery test"
