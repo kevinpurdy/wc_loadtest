@@ -12,6 +12,8 @@ var page_timestamps = [];
 var page_timestamps_recorder = {};
 var unique_url_salt = 1;
 
+var loop_hours = 20; // Kevin's variable to loop 20 hours
+
 function setupTest() {
   //adding these listeners to track request failure codes
   chrome.webRequest.onCompleted.addListener(capture_completed_status,
@@ -300,7 +302,9 @@ function initialize() {
   chrome.browserAction.onClicked.addListener(function(tab) {
     // Start the test with default settings.
     chrome.runtime.onMessage.addListener(testListener);
-    setTimeout(setupTest, 1000);
+    for (var i = 0; i < loop_hours; i++) {
+      setTimeout(setupTest, 1000 + (i * 3600000));
+    }
   });
 }
 
