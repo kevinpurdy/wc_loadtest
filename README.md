@@ -3,6 +3,4 @@ Customized version of Google's Chromium power_LoadTest app/extension ([code](htt
 To change number of loops (hours of testing), change value of "loop_hours" at the top of test.js
 Log into Facebook and Gmail before starting test. Enable plug-ins automatically if you have them disabled (for streaming audio)
 
-To-dos:
-+ ~~Make extension keep Chromebook always awake, no screen-off/sleep (possible?).~~
-+ Have extension "log" battery life every x amount of time (to where? localhost webpage? local storage? synced storage?)
+Re-synced to Google's own testing code 2019-02-19.
