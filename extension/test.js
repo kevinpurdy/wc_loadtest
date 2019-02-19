@@ -256,7 +256,7 @@ function send_keyvals() {
     post.push(name + "_successful_loads=" + cycle.successful_loads);
     post.push(name + "_failed_loads=" + cycle.failed_loads);
   }
-
+  chrome.power.requestKeepAwake('display');
   chrome.runtime.onMessage.removeListener(testListener);
 
   var status_url = 'http://localhost:8001/status';
